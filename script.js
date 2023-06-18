@@ -5,24 +5,23 @@ class Person {
 		this.age=age;
 	}
 
-	 // get nameFnc(){
-		//  return this.name
-	 // }
+	 get name(){
+		 return this.name
+	 }
+	set age(age) {
+    this._age = age;
+  }
 }
 
 class Student extends Person {
-	// study(){
-	// 	return super.name+"is studying"
-	// }
+	
 	 study() {
-    console.log(`${this._name} is studying.`);
+    console.log(`${this.name} is studying.`);
   }
 }
 
 class Teacher extends Person {
-	// teach(){
-	// 	return super.name+"is teaching"
-	// }
+	
 	 teach() {
     console.log(`${this._name} is teaching.`);
   }
